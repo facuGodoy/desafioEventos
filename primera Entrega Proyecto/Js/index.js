@@ -57,6 +57,6 @@ generarPedido()
 
 console.log(pedidoCliente)
 
-const costoTotal = pedidoCliente.map((item) => (item.precio)).reduce((tortas, bebidas) => (tortas + bebidas ,0));
+const costoTotal = pedidoCliente.map((item) => item.precio).reduce((acc, value) => acc + value ,0);
 
 console.log(costoTotal);
