@@ -59,4 +59,12 @@ console.log(pedidoCliente)
 
 const costoTotal = pedidoCliente.map((item) => item.precio).reduce((acc, value) => acc + value ,0);
 
+let confirmar = confirm('El total de tu pedido es'+ ' $' + costoTotal);
+
 console.log(costoTotal);
+
+if (confirmar === true) {
+   alert ('Muchas gracias por tu compra' + ' ' + nombreCliente + ' ' + 'que lo disfrutes..!');
+} else {
+   alert(nombreCliente + ' ' + 'usted a cancelado la compra' + ' ' + '=(');
+}

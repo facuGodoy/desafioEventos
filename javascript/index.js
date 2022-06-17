@@ -1,10 +1,19 @@
+
 let bienvenido = alert('Bienvenido a Nuestra Tienda')
 
-let nombreDecliente = prompt ('Nombre')
+let nombreDeCliente = prompt ('Nombre')
 
-let apellidoDecliente = prompt('Apellido')
+while (nombreDeCliente === (isNan(nombreDeCliente))) {
+    nombreDeCliente = prompt ('Ingrese su nombre sin espacios ni numeros');
+}
 
-let cliente = (nombreDecliente + ' ' + apellidoDecliente)
+let apellidoDeCliente = prompt('Apellido')
+
+while (apellidoDeCliente === (isNan(apellidoDeCliente))) {
+    apellidoDeCliente = prompt ('Ingrese su apellido sin espacios ni numeros');
+}
+
+let cliente = (nombreDeCliente + ' ' + apellidoDeCliente)
 
 alert( 'Welcome: ' + cliente )
 
@@ -24,4 +33,4 @@ if (porcionDeTorta == 1) {
     alert( cliente + ' ' + 'el monto es $640 ya que tienes un 20% de descuento');
 }
 
-alert('Gracias por tu compra :' + " " + cliente)
+alert('Gracias por tu compra :' + " " + cliente) 
